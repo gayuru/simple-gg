@@ -1,24 +1,20 @@
 ---
 title: now
-tagline: i'm in my "ship + unblock + don't lose my mind" era.
+tagline: what i’m building, learning, and duct-taping together lovingly
 updated: jan 2026
 ---
 
 ## working on
 
-- pgm'ing dashpivot @ sitemate — turning chaos into shipped product
-- roadmap triage: tech debt + prod bugs + "pls can we just…" requests
-- tighter pde process: clearer priorities, faster decisions, less meeting yak
-- ai experiments in real workflows (agentic-ish), starting small then scaling
-- hiring/pipeline stuff — incl the women in engineering talent tryout in melb
-
-## reading
-
-- an elegant puzzle
-- made to stick
-- thinking, fast and slow
+- pgm’ing dashpivot at [sitemate](https://sitemate.com)
+- making eng process tighter and sending it with our velocity
+- claude agents for triaging support, go to market questions
+- what other places i could implement ai agents
+- staying consistent with running + swimming + gym
+- watering my relationships in melbourne ⋆｡°✩
 
 ## exploring
 
-- better weekly metrics + summaries (so we're not arguing off vibes)
-- running/swimming consistency (breathing still negotiable)
+- how to level up our product design process
+- why is figma not keeping up with ai
+- automate all things with claude

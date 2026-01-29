@@ -10,13 +10,4 @@ const thoughts = defineCollection({
   }),
 });
 
-const now = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/now' }),
-  schema: z.object({
-    title: z.string(),
-    tagline: z.string(),
-    updated: z.string(),
-  }),
-});
-
-export const collections = { thoughts, now };
+export const collections = { thoughts };
