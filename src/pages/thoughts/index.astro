@@ -1,5 +1,9 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+
+const posts = await getCollection('thoughts');
+const sortedPosts = posts.sort((a, b) => b.data.number.localeCompare(a.data.number));
 ---
 
 <Base title="Thoughts - Gayuru G">
@@ -11,7 +15,9 @@ import Base from '../../layouts/Base.astro';
     </p>
 
     <div class="space-y-2 mb-8">
-      <p>00. <a href="/thoughts/00-hello-world">hello world</a></p>
+      {sortedPosts.map((post) => (
+        <p>{post.data.number}. <a href={`/thoughts/${post.id}`}>{post.data.title}</a></p>
+      ))}
     </div>
 
     <nav class="mt-12">
