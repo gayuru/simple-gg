@@ -16,7 +16,7 @@ const { Content } = await render(post);
 
 <Base title={`${post.data.number}. ${post.data.title} - Gayuru G`}>
   <div class="text-sm">
-    <h1 class="text-base mb-6 font-heading">{post.data.number}. {post.data.title}</h1>
+    <h1 class="mb-6 font-heading"><span class="text-xs text-muted">{post.data.number}.</span> <span class="text-base">{post.data.title}</span></h1>
 
     <p class="text-muted mb-8">{post.data.date}</p>
 

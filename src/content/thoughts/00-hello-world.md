@@ -1,9 +1,7 @@
 ---
-title: hello world
-date: "January 2026"
-number: "00"
+title: hello again
+date: '2026-01-29'
+number: '00'
 ---
 
-Hello world.
-
-This is the beginning of something new.
+it's been a while since i worked on something code base again
