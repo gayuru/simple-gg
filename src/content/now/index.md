@@ -11,10 +11,11 @@ updated: jan 2026
 - claude agents for triaging support, go to market questions
 - what other places i could implement ai agents
 - staying consistent with running + swimming + gym
-- watering my relationships in melbourne ⋆｡°✩
+- watering my friendships in melbourne ❀
 
 ## exploring
 
 - how to level up our product design process
 - why is figma not keeping up with ai
 - automate all things with claude
+- writing more . ݁₊ ⊹ . ݁˖ . ݁
