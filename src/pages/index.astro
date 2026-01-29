@@ -3,20 +3,34 @@ import Base from '../layouts/Base.astro';
 ---
 
 <Base>
-  <h1 class="text-xl mb-12">Gayuru G</h1>
+  <div class="space-y-5 leading-relaxed text-sm">
+    <h1 class="font-heading text-base">Gayuru G</h1>
 
-  <div class="space-y-4 mb-12 text-[--color-muted]">
-    <p>I do product.</p>
-    <p>I also can't stop designing + engineering.</p>
+    <div class="text-muted">-</div>
+
+    <div class="space-y-1">
+      <p>
+        <span class="text-blue">Product person</span> with a focus on simplicity.
+      </p>
+      <p>
+        Exploring <span class="text-green">design</span>, <span
+          class="text-purple">engineering</span
+        > and
+      </p>
+      <p><span class="text-yellow">building things</span> that matter.</p>
+    </div>
+
+    <div class="space-y-1">
+      <p>hello@gayurug.com</p>
+    </div>
+
+    <div class="text-muted">-</div>
+
+    <nav class="space-y-1">
+      <p><a href="/thoughts" class="text-blue">&gt; thoughts</a></p>
+      <p><a href="/now" class="text-green">&gt; now</a></p>
+    </nav>
+
+    <div class="text-muted">-</div>
   </div>
-
-  <div class="mb-12">
-    <a href="mailto:hello@example.com">hello@example.com</a>
-  </div>
-
-  <nav class="flex gap-4 text-sm">
-    <a href="/thoughts">thoughts</a>
-    <span class="text-[--color-muted]">/</span>
-    <a href="/now">now</a>
-  </nav>
 </Base>

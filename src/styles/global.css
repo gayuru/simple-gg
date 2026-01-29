@@ -1,14 +1,52 @@
 @import 'tailwindcss';
 
+@font-face {
+  font-family: 'TRT Interval';
+  src: url('/fonts/trt-interval-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RCL Monoskrn';
+  src: url('/fonts/rcl-monoskrn-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TRT Interval';
+  src: url('/fonts/trt-interval-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TRT Interval';
+  src: url('/fonts/trt-interval-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-bg: #0a0a0a;
   --color-text: #e5e5e5;
   --color-muted: #737373;
-  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  --color-blue: #5b9bf8;
+  --color-green: #7ec87e;
+  --color-yellow: #e5c07b;
+  --color-purple: #c678dd;
+  --color-orange: #d19a66;
+  --font-heading: 'TRT Interval', ui-monospace, monospace;
+  --font-body: 'RCL Monoskrn', ui-monospace, monospace;
 }
 
 html {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-text);
 }
