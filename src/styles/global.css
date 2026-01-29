@@ -36,11 +36,7 @@
   --color-bg: #0a0a0a;
   --color-text: #e5e5e5;
   --color-muted: #737373;
-  --color-blue: #5b9bf8;
-  --color-green: #7ec87e;
-  --color-yellow: #e5c07b;
-  --color-purple: #c678dd;
-  --color-orange: #d19a66;
+  --color-link: #926CFF;
   --font-heading: 'TRT Interval', ui-monospace, monospace;
   --font-body: 'RCL Monoskrn', ui-monospace, monospace;
 }
@@ -57,12 +53,15 @@ body {
 
 a {
   color: var(--color-text);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--color-link);
+  text-decoration-style: dotted;
+  text-underline-offset: 5px;
   transition: opacity 0.15s ease;
 }
 
 a:hover {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 ::selection {
