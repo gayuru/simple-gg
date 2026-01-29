@@ -1,44 +1,53 @@
 ---
 import Base from '../layouts/Base.astro';
+
+// Import the markdown file directly
+const now = await import('../content/now/index.md');
+const { Content, frontmatter } = now;
 ---
 
 <Base title="Now - Gayuru G">
   <div class="text-sm">
-    <h1 class="text-base mb-6 font-heading">Now</h1>
+    <h1 class="text-base mb-6 font-heading">{frontmatter.title}</h1>
 
     <p class="text-muted mb-8">
-      What I'm focused on at this point in my life.
+      {frontmatter.tagline}
     </p>
 
-    <section class="mb-8">
-      <h2 class="text-xs uppercase tracking-wide text-muted mb-3 font-heading">Working on</h2>
-      <ul class="space-y-1">
-        <li>Building products that matter</li>
-        <li>Learning in public</li>
-      </ul>
-    </section>
+    <div class="prose-now">
+      <Content />
+    </div>
 
-    <section class="mb-8">
-      <h2 class="text-xs uppercase tracking-wide text-muted mb-3 font-heading">Reading</h2>
-      <ul class="space-y-1">
-        <li>Currently updating this list...</li>
-      </ul>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-xs uppercase tracking-wide text-muted mb-3 font-heading">Exploring</h2>
-      <ul class="space-y-1">
-        <li>New tools and technologies</li>
-        <li>Creative side projects</li>
-      </ul>
-    </section>
-
-    <p class="text-muted text-xs">
-      Last updated: January 2026
-    </p>
+    <p class="text-muted text-xs mt-8">last updated: {frontmatter.updated}</p>
 
     <nav class="mt-12">
       <a href="/">../</a>
     </nav>
   </div>
 </Base>
+
+<style>
+  .prose-now :global(h2) {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-muted);
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+    font-family: var(--font-heading);
+  }
+
+  .prose-now :global(h2:first-child) {
+    margin-top: 0;
+  }
+
+  .prose-now :global(ul) {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
+
+  .prose-now :global(li) {
+    margin-bottom: 0.25rem;
+  }
+</style>
